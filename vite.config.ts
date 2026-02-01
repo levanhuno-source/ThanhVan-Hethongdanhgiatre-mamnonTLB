@@ -25,15 +25,7 @@ export default defineConfig(({ mode }) => {
         }
       },
       build: {
-        chunkSizeWarningLimit: 1000, // Increase limit to 1000 kB
-        rollupOptions: {
-          output: {
-            manualChunks: {
-              'react-vendor': ['react', 'react-dom'],
-              'charts': ['recharts']
-            }
-          }
-        }
+        chunkSizeWarningLimit: 1000
       }
     };
 });
